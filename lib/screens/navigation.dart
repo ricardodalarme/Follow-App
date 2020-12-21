@@ -3,6 +3,7 @@ import 'package:follow_app/constants.dart';
 import 'package:follow_app/screens/parameters.dart';
 import 'package:follow_app/screens/map.dart';
 import 'package:follow_app/screens/telemetry.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 class BottomNavScreen extends StatefulWidget {
   BottomNavScreen({Key key}) : super(key: key);
@@ -62,17 +63,17 @@ class _BottomNavScreenState extends State<BottomNavScreen> {
         elevation: 0.0,
         items: <Widget>[
           Icon(
-            Icons.map,
+            FontAwesomeIcons.infinity,
             size: 25,
             color: Colors.black38,
           ),
           Icon(
-            Icons.home,
+            FontAwesomeIcons.slidersH,
             size: 25,
             color: Colors.black38,
           ),
           Icon(
-            Icons.signal_cellular_4_bar_rounded,
+            FontAwesomeIcons.chartLine,
             size: 25,
             color: Colors.black38,
           ),

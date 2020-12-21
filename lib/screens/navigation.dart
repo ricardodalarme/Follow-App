@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:follow_app/screens/defaults.dart';
+import 'package:follow_app/constants.dart';
+import 'package:follow_app/screens/parameters.dart';
 import 'package:follow_app/screens/map.dart';
 import 'package:follow_app/screens/telemetry.dart';
 
@@ -27,7 +28,7 @@ class _BottomNavScreenState extends State<BottomNavScreen> {
   }
 
   // Telas que vão ser mostradas na barrra de navegação
-  static final DefaultsScreen _defaults = new DefaultsScreen();
+  static final ParametersScreen _defaults = new ParametersScreen();
   static final MapScreen _map = new MapScreen();
   static final TelemetryScreen _telemetry = new TelemetryScreen();
 
@@ -88,7 +89,7 @@ class _BottomNavScreenState extends State<BottomNavScreen> {
                       ),
                       decoration: BoxDecoration(
                         color: _selectedIndex == key
-                            ? Colors.blue[600]
+                            ? kPrimaryColor
                             : Colors.transparent,
                         borderRadius: BorderRadius.circular(20.0),
                       ),

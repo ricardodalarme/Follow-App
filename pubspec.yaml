@@ -26,7 +26,6 @@ dependencies:
 
   font_awesome_flutter: ^8.11.0
   graphic: ^0.3.0
-  google_fonts: ^1.1.1
 
 dev_dependencies:
   flutter_test:

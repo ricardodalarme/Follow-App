@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:graphic/graphic.dart' as graphic;
 
 class BatteryGraphic extends StatelessWidget {
-  final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
-
   final adjustData = [
     {"type": "Email", "index": 0, "value": 120},
     {"type": "Email", "index": 1, "value": 132},

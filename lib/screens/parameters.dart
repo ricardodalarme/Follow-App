@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:follow_app/constants.dart';
 import 'package:follow_app/widgets/custom_button.dart';
 import 'package:follow_app/widgets/custom_text_field.dart';
 

@@ -2,8 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:graphic/graphic.dart' as graphic;
 
 class GyroGraphic extends StatelessWidget {
-  final GlobalKey<ScaffoldState> _scaffoldKey = new GlobalKey<ScaffoldState>();
-
   final lineData = [
     {"Date": "04.01.2016", "Close": 126.12},
     {"Date": "05.01.2016", "Close": 125.688},

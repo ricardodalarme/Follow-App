@@ -29,13 +29,13 @@ class _BottomNavScreenState extends State<BottomNavScreen> {
   }
 
   // Telas que vão ser mostradas na barrra de navegação
-  static final ParametersScreen _defaults = new ParametersScreen();
+  static final ParametersScreen _parameters = new ParametersScreen();
   static final MapScreen _map = new MapScreen();
   static final TelemetryScreen _telemetry = new TelemetryScreen();
 
   final List<Widget> _screens = [
+    _parameters,
     _map,
-    _defaults,
     _telemetry,
   ];
 
@@ -63,12 +63,12 @@ class _BottomNavScreenState extends State<BottomNavScreen> {
         elevation: 0.0,
         items: <Widget>[
           Icon(
-            FontAwesomeIcons.infinity,
+            FontAwesomeIcons.slidersH,
             size: 25,
             color: Colors.black38,
           ),
           Icon(
-            FontAwesomeIcons.slidersH,
+            FontAwesomeIcons.infinity,
             size: 25,
             color: Colors.black38,
           ),

@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'package:follow_app/graphics/battery.dart';
 import 'package:follow_app/graphics/gyro.dart';
 import 'package:follow_app/widgets/measures_list.dart';
-import 'package:graphic/graphic.dart';
 
 class TelemetryScreen extends StatefulWidget {
   TelemetryScreen({Key key}) : super(key: key);
@@ -19,7 +18,6 @@ class _TelemetryScreenState extends State<TelemetryScreen> {
     return Scaffold(
       backgroundColor: Colors.white,
       appBar: AppBar(
-        centerTitle: true,
         elevation: 0,
         backgroundColor: Colors.white,
         shadowColor: Colors.transparent,
@@ -33,12 +31,14 @@ class _TelemetryScreenState extends State<TelemetryScreen> {
           ),
         ),
       ),
-      body: SingleChildScrollView(
+      body: Padding(
         padding: EdgeInsets.all(10),
         child: Column(
           children: [
             measureList,
-            currentGraphic(),
+            Expanded(
+              child: currentGraphic(),
+            ),
           ],
         ),
       ),

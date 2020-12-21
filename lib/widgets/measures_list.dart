@@ -8,7 +8,7 @@ class MeasureList extends StatefulWidget {
 
 class _MeasureListState extends State<MeasureList> {
   List<String> province = [
-    "Gyro",
+    "Giroscópio",
     "Encoder",
     "Sensores",
     "Motores",

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:follow_app/graphics/battery.dart';
-import 'package:follow_app/graphics/gyro.dart';
+import 'package:follow_app/graphics/gyroscope.dart';
 import 'package:follow_app/widgets/measures_list.dart';
 
 class TelemetryScreen extends StatefulWidget {
@@ -50,7 +50,7 @@ class _TelemetryScreenState extends State<TelemetryScreen> {
       case 0:
         return BatteryGraphic();
       case 1:
-        return GyroGraphic();
+        return GyroscopeGraphic();
     }
   }
 }

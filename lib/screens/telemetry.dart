@@ -70,8 +70,9 @@ class _TelemetryScreenState extends State<TelemetryScreen> {
             ),
           ),
           // Gráficos
-          Container(
-            child: Expanded(
+          Expanded(
+            child: Padding(
+              padding: EdgeInsets.all(15),
               child: PageView(
                 controller: _pageController,
                 onPageChanged: (index) {
